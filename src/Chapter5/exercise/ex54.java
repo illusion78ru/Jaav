@@ -4,15 +4,14 @@ class wordmass {
     int numwords;
     String text= "";
 
-    int wordnum(String msg) {
+    int wordnum(String msg) { //—читает количество слов
         int numword=1;
+        int spacer=0;
         String str=msg;
         for (int i = 0; i < str.length()-1; i++) {
-           // if (i > 1) {
                 if (((str.charAt(i)) == ' ') & (str.charAt(i + 1) != ' ')) {
                     numword++;
                 }
-            //}
         }
         return numword;
     }
@@ -40,14 +39,11 @@ wordmass msg=new wordmass();
                 spaces[j] = i;
             }
         }
-  //      for (int i=0;i<=j+1;i++)
-    //        System.out.print(spaces[i]+" ");
-      //  System.out.println();
 
         String words[]=new String[msg.wordnum(msg.text)];
-
         for (int i=0;i< msg.wordnum(msg.text); i++)
             words[i]="";
+
         for (int k=0; k< msg.wordnum(msg.text); k++) {
 
             for (int l=spaces[k]; l<spaces[k+1]; l++) {
