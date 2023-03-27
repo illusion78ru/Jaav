@@ -46,8 +46,8 @@ class Trianglez extends TwoDStuff {
 
 public class Shapes3 {
     public static void main(String args[]) {
-        Trianglez t1 = new Trianglez("закрашенный", 4.0, 4.0);
-        Trianglez t2 = new Trianglez("контурный", 8.0, 12.0);
+        Trianglez t1 = new Trianglez("закрашенный", 4, 4);
+        Trianglez t2 = new Trianglez("контурный", 8, 12);
 
         System.out.println("Информация о t1:");
         t1.showStyle();
